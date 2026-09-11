@@ -6,29 +6,32 @@
     <title>Taskflow-Login</title>
     </head>
     <body>
-        <head>
-    <a hre="index.html">taskflow</a>
+        <header>
+    <a href="index.html">taskflow</a>
     <nav>
         <a href="index.html">home</a>
         <a href="login.html">login</a>
         <a href="signup.html">signup</a>
         </nav>
-</head>
+</header>
 <main>
   <h1>Login to Taskflow</h1>
-  <p>Welcome back! Please enter your details.</p>
-<form>
-    <label>Email</label>
+  <p>
+    Welcome back! Please enter your details.
+  </p>
+<form action="dashboard.html">
+
+    <label for="email">Email</label>
     <br>
-    <input type="Email">
+    <input type="email" id="email" name="email">
     <br><br>
     <label>Password</label>
     <br>
-    <input type="Password">
+    <input type="Password" id="Password" name="Password">
     <br><br>
 
-    <input type="checkbox">Remember me 
-    <label>keep me logged in</label>
+    <input type="checkbox" id="remember" name="remember"> 
+    <label for="remember">keep me logged in</label>
     <br><br>         
     <button type="submit">Login</button>
 </form>
