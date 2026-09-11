@@ -1,0 +1,38 @@
+body {
+    background: lightgray;
+    font-family: Arial, sans-serif;
+}
+
+.card {
+    background: white;
+    width: 400px;
+    padding: 30px;
+    margin: 50px auto;
+    border: 1px solid black;
+}
+
+#title {
+    color: blue;
+}
+
+p {
+    color: black;
+}
+
+.important {
+    color: red;
+    font-weight: bold;
+}
+
+input[type="email"] {
+    border: 2px solid blue;
+}
+
+button {
+    background: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
+

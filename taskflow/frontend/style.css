@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+body {
+    background -color: #f8fbff;
+    margin: 0;
+}
+header {
+    background-color: white;
+    padding: 18px 48px;
+    display: flex;
+}
+nav a {
+    text-decoration: none;
+    color: black;
+    margin-right: 20px;
+}
+main {
+    padding: 60px 48px;
+}
+h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 600px;
+}
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    margin-top: 20px;
+}
+.features {
+    display: ;flex;
+    gap: 30px;
+    list-style: none;
+}
+.feature-list li {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    flex: 1;
+    transition: transform 0.3s;
+}
+.features {
+    margin-top: 60px;
+}
+.features h2 {
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+.feature-list strong {
+    font-size: 20px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+footer {
+    text-align: center;
+    padding: 30px;
+    color: #666;
+}
+.btn:hover {
+    opacity: 0.8;
+}
+header > a {
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+nav a:hover {
+    opacity: 0.6;
+}
+.feature-list li:hover {
+    transform: translateY(-5px);
+}
+@media (max-width: 768px) {
+    .features list {
+        flex-direction: column;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+    h1 {
+        font-size: 36px;
+    }
+    
+
+    
