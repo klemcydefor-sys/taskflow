@@ -6,42 +6,46 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="taskflow website">
     <title>Taskflow-Home</title>
-    <link rel="stylesheet" href="style.css">
+    <link href="./tailwind/output.css" rel="stylesheet">
     </head>
-    <body>
-    <header>
-    <a href="index.html">Taskflow</a>
+    <body class="min-h-screen bg-sky-50 font-sans text-slate-800">
+    <header class="flex flex-col items-center justify-between rounded-xl bg-sky-100 px-4 py-4 shadow-sm sm:flex-row sm:px-6">
+    <a href="index.html" class="text-2xl font-bold text-blue-700">Taskflow</a>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="login.html" class="active">Login</a>
-        <a href="signup.html">Signup</a>
-        <a href="dashboard.html">Dashboard</a>
+    <nav class="flex flex-wrap items-center justify-center gap-4 sm:gap-6">
+      <a href="index.html" class="font-semibold text-blue-700 hover:text-blue-900">Home</a>
+      <a href="login.html" class="text-slate-700 hover:text-blue-700">Login</a>
+        <a href="signup.html" class="text-slate-700 hover:text-blue-700">Signup</a>
+        <a href="dashboard.html" class="text-slate-700 hover:text-blue-700">Dashboard</a>
         </nav>
 </header>
-<main>
-  <h1>Organise Your Task Get More Done</h1> 
-  <p>Taskflow helps you create, organise and track your daily tasks in one simple place</p>
-  <a href="signup.html" class="btn">Get started</a>
-  <section class="features">
-  <h2>Why Taskflow</h2>
-  <ul class="feature-list">
-    <li>
-       <strong>Create task</strong><br>
+<main class="mx-auto max-w-6xl px-6 py-16">
+ <h1 class="text-4xl font-bold tracking-tight text-slate-900 md:text-5xl">Organise Your Task Get More Done</h1>
+<p class="mt-4 max-w-2xl text-lg leading-relaxed text-slate-600">
+    Taskflow helps you create, organise and track your daily tasks in one simple place.
+</p>
+<a href="signup.html" class="mt-6 inline-block rounded-lg bg-blue-600 px-6 py-3 font-semibold text-white shadow-sm transition hover:bg-blue-700">
+    Get Started
+</a>
+  <section class="features mx-auto mt-12 max-w-6xl px-6">
+ <h2 class="mb-6 text-2xl font-bold text-slate-900">Why Taskflow</h2>
+  <ul class="grid grid-cols-1 gap-6 md:grid-cols-3">
+  <li class="rounded-xl bg-white p-6 shadow-sm ring-1 ring-slate-200">
+    <strong class="mb-2 block text-lg font-bold text-slate-900">Create task</strong>
        Quickly add the things you need to do.
     </li>  
-    <li>
-        <strong>Track Progress</strong><br>
+   <li class="rounded-xl bg-white p-6 shadow-sm ring-1 ring-slate-200">
+        <strong class="mb-2 block text-lg font-bold text-slate-900">Track Progress</strong>
         See how much you have done and what is left to do.
     </li>
-    <li>
-        <strong>Stay Organised</strong><br>
+  <li class="rounded-xl bg-white p-6 shadow-sm ring-1 ring-slate-200">
+        <strong class="mb-2 block text-lg font-bold text-slate-900">Stay Organised</strong>
         keep all your tasks in one place and never forget.
     </li>
 </ul>
 </section> 
 </main>
-<footer> 
+<footer class="mt-16 border-t border-slate-200 px-6 py-6 text-center text-sm text-slate-500">
     <p>&copy; 2026 Taskflow. All Rights Reserved</p>
 </footer>
 </body>

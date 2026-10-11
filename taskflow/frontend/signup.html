@@ -5,55 +5,59 @@
     <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taskflow-Login</title>
-    <link rel="stylesheet" href="style.css">
+<link href="./tailwind/output.css" rel="stylesheet">
     </head>
-    <body>
-        <header>
-    <a href="index.html" class="logo">Taskflow</a>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="login.html">Login</a>
-        <a href="signup.html">Signup</a>
+   <body class="min-h-screen bg-sky-50 font-sans text-slate-800">
+      <header class="flex flex-col items-center justify-between gap-4 rounded-xl bg-sky-100 px-4 py-4 shadow-sm sm:flex-row sm:px-6">
+<a href="index.html" class="text-2xl font-bold text-blue-700">Taskflow</a>
+ <nav class="flex flex-wrap items-center justify-center gap-4 sm:gap-6">
+<a href="index.html" class="text-slate-700 hover:text-blue-700">Home</a>
+<a href="login.html" class="text-slate-700 hover:text-blue-700">Login</a>
+<a href="signup.html" class="font-semibold text-blue-700 hover:text-blue-900">Signup</a>
         </nav>
 </header>
-<main>
-    <div class="form-container">
+<main class="mx-auto max-w-6xl px-6 py-16">
+  <div class="mx-auto max-w-md rounded-xl bg-white p-8 shadow-sm ring-1 ring-slate-200">
 
-  <h1>Create Your Account</h1>
+ <h1 class="mb-3 text-2xl font-bold text-slate-900">Create Your Account</h1>
 
-  <p>Join Taskflow and start managing your tasks today.</p>
+<p class="mb-6 text-sm text-slate-600">Join Taskflow and start managing your tasks today.</p>
 
 <form>
     <div class="form-group">
-    <label for="name">Name</label>
+   <label for="name" class="mb-2 block text-sm font-medium text-slate-700">Name</label>
     <input 
-       type="text"
-       id="name"
-       placeholder="Your full name">
+<input
+    type="text"
+    id="name"
+    placeholder="Your full name"
+    class="mb-5 w-full rounded-lg border border-slate-300 px-4 py-3 outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-100">
        </div>
     
        <div class="form-group">
-    <label for="email">Email</label>
+<label for="email" class="mb-2 block text-sm font-medium text-slate-700">Email</label>
     <input type="email"
      id="email"
-     placeholder="Enter your email">
+     placeholder="Enter your email"
+     class="mb-5 w-full rounded-lg border border-slate-300 px-4 py-3 outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-100"
     </div>
 
     <div class="form-group">
-    <label for="password">Password</label>
-    <input type="Password"
+<label for="password" class="mb-2 block text-sm font-medium text-slate-700">Password</label>
+<input type="password"
      id="password"
-     placeholder="create a password">
+     placeholder="Create a password"
+     class="mb-5 w-full rounded-lg border border-slate-300 px-4 py-3 outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-100">
     </div>
 
     
-    <button class="btn" type="submit">
-        Create Account
-    </button>
+  <button type="submit" class="w-full rounded-lg bg-blue-600 px-4 py-3 font-semibold text-white shadow-sm transition hover:bg-blue-700 focus:ring-2 focus:ring-blue-300">
+    Create Account
+</button>
 </form>
-<div class="form=-footer>
+<div class="mt-6 text-center text-sm text-slate-600">
     Already have an account? 
-    <a href="login.html">Login</a>  
+   <a href="login.html" class="font-semibold text-blue-600 hover:text-blue-800">Login</a>
     </div>                         
     
 </main>

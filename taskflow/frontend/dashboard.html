@@ -4,46 +4,42 @@
     <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Taskflow-home</title>
-      <link rel="stylesheet" href="style.css">
+   <link href="./tailwind/output.css" rel="stylesheet">
     </head>
 
-    <body>
-        <header>
-    <a href="index.html" class="logo">Taskflow</a>
+  <body class="min-h-screen bg-sky-50 font-sans text-slate-800">
+      <header class="flex flex-col items-center justify-between gap-4 rounded-xl bg-sky-100 px-4 py-4 shadow-sm sm:flex-row sm:px-6">
+<a href="index.html" class="text-2xl font-bold text-blue-700">Taskflow</a>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="dashboard.html" class="active">Dashboard</a>
-        <a href="index.html">Logout</a>
+   <nav class="flex flex-wrap items-center justify-center gap-4 sm:gap-6">
+       <a href="index.html" class="font-medium text-slate-700 transition hover:text-blue-700">Home</a>
+<a href="dashboard.html" class="font-semibold text-blue-700 underline decoration-2 underline-offset-8">Dashboard</a>
+      <a href="index.html" class="font-medium text-slate-700 transition hover:text-blue-700">Logout</a>
         </nav>
 </header>
-    </body>
-<main class="dashboard">
+<main class="mx-auto max-w-6xl px-6 py-12">
 
-    <div class="dashboard">
-<main>
-    <h1>Your Tasks</h1>
+<h1 class="mb-3 text-4xl font-bold tracking-tight text-slate-900">Your Tasks</h1>
 
-    <p>Here is an overview of your tasks</p>
-    <div class="task-overview"> 
-     <p>5 Total Tasks</p>
-     <p>2 Completed</p>
-     <p>3 Pending</p>
+<p class="mb-8 text-slate-600">Here is an overview of your tasks</p>
+  <div class="mb-10 grid grid-cols-1 gap-4 sm:grid-cols-3">
+     <p class="rounded-xl bg-white p-6 font-semibold text-slate-900 shadow-sm ring-1 ring-slate-200">5 Total Tasks</p>
+   <p class="rounded-xl bg-white p-6 font-semibold text-slate-900 shadow-sm ring-1 ring-slate-200">2 Completed</p>
+  <p class="rounded-xl bg-white p-6 font-semibold text-slate-900 shadow-sm ring-1 ring-slate-200">3 Pending</p>
 </div>
-     <h2>Task List</h2>
+    <h2 class="mb-4 text-2xl font-bold text-slate-900">Task List</h2>
 
-     <ul>
-        <li>Complete HTML assignment</li>
-        <li>Read JavaScript notes</li>
-        <li>Build TaskFlow project</li>
-        <li>Go for a walk</li>
-        <li>Plan next week</li>
+ <ul class="mb-8 space-y-3">
+        <li class="rounded-lg bg-white p-4 shadow-sm ring-1 ring-slate-200">Complete HTML assignment</li>
+<li class="rounded-lg bg-white p-4 shadow-sm ring-1 ring-slate-200">Read JavaScript notes</li>
+<li class="rounded-lg bg-white p-4 shadow-sm ring-1 ring-slate-200">Build TaskFlow project</li>
+        <li class="rounded-lg bg-white p-4 shadow-sm ring-1 ring-slate-200">Go for a walk</li>
+        <li class="rounded-lg bg-white p-4 shadow-sm ring-1 ring-slate-200">Plan next week</li>
      </ul>
-     <a href="#">Add a new Task</a>
+<a href="#" class="inline-block rounded-lg bg-blue-600 px-5 py-3 font-semibold text-white shadow-sm transition hover:bg-blue-700">Add a new Task</a>
 </main>
-    </div>
 
-<footer>
+<footer class="mt-12 border-t border-slate-200 px-6 py-6 text-center text-sm text-slate-500">
     <p>&copy; 2026 TaskFlow. All rights reserved.</p>
 </footer>
 </body>
